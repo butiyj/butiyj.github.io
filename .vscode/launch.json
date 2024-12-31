@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Vite Debug",
+        "script": "${workspaceFolder}/node_modules/vite/bin/vite.js",
+        "args": ["--inspect"],
+        "autoAttachChildProcesses": true,
+        "sourceMaps": true,
+        "smartStep": true,
+        "internalConsoleOptions": "openOnSessionStart",
+        "outFiles": ["${workspaceFolder}/dist/**/*.js", "!**/node_modules/**"]
+      },
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Chrome Debug",
+        "url": "http://localhost:5173",
+        "webRoot": "${workspaceFolder}/src",
+        "sourceMaps": true,
+        "trace": true
+      }
+    ]
+  }
+  
