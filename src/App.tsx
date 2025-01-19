@@ -10,15 +10,12 @@ function App() {
 
   return (
     <Router>
-    <div>
       <Routes>
         {/* 홈 페이지 */}
         <Route path="/" element={<Home />} />
         {/* 게임 페이지 */}
         <Route path="/game-on1" element={<GamePageOn1 />} />
-       
-      </Routes>
-    </div>
+       </Routes>
   </Router>
   )
 }

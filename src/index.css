@@ -66,3 +66,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.button-container {
+  display: flex;           /* Flexbox 활성화 */
+  flex-direction: column;  /* 열 방향 정렬 */
+  align-items: center;     /* 가로 가운데 정렬 */
+  gap: 10px;               /* 버튼 간격 조정 */
+}

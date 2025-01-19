@@ -20,6 +20,15 @@ const keyDown = {};
 const bulletList = [];
 const enemyList = [];
 
+// 게임 상태 초기화
+function resetGameState() {
+  gameover = false;
+  score = 0;
+  bulletList.length = 0; // 총알 배열 초기화
+  enemyList.length = 0;  // 적 배열 초기화
+}
+
+
 // 유틸리티 함수
 function generateRandomValue(max, min) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -160,6 +169,7 @@ function main() {
 
 // 초기화
 function init() {
+  resetGameState();
   loadImages();
   setupKeyboardListener();
   createEnemy();
