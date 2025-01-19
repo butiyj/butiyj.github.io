@@ -20,7 +20,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "allowJs": true,             // JavaScript 파일 허용
+    "checkJs": false,            // JavaScript 파일 타입 검사 비활성화
+    "esModuleInterop": true,     // CommonJS 및 ES 모듈 간 호환성
   },
   "include": ["src"]
 }
